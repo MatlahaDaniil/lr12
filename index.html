@@ -8,16 +8,31 @@
 </head>
 <body>
          <div id="app">
+
+          <form id="difficulty-form" style="margin: 50px;">
+            <h3>Рівень складності</h3>
+            <label>
+                <input type="radio" id="f_check" name="difficulty" value="easy" checked> Початковий
+            </label><br>
+            <label>
+                <input type="radio" id="s_check" name="difficulty" value="mid">Середній ‎ ‎‎ ‎ ‎  ‎ 
+            </label><br>
+            <label>
+                <input type="radio" id="t_check" name="difficulty" value="high">Високий‎ ‎ ‎ ‎ ‎ ‎ ‎ 
+            </label><br><br>
+            <button class="button" type="button" id="submit-button">Підтвердити</button>
+        </form>
+
            <div id="card">
              <p id="word">Word</p>
              <input type="text" id="translation" placeholder="Enter translation" />
              <button id="check">Перевірити</button>
            </div>
-           <p id="progress">Крок: 0/10</p>
-           <p id="stats">Правильно: 0, Помилок: 0</p>
-           <div id="modal" style="display:none;">
-             <p id="result">Ваш рівень: Початківець</p>
-             <button id="restart">Перезавантажити</button>
+            <p id="progress">Крок: 0/10</p>
+            <p id="stats">Правильно: 0, Помилок: 0</p>
+            <div id="modal" style="display:none;">
+               <p class="button" id="result">Ваш рівень: Початківець</p>
+              <button id="restart">Перезавантажити</button>
            </div>
         </div> 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
