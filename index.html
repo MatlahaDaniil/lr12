@@ -7,16 +7,20 @@
     <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
-        <h1>Гра «Однорукий бандит»</h1>
-        <p id="user-info"></p>
-        <div class="slots">
-            <img class="slot" id="slot1"></div>
-            <img class="slot" id="slot2"></div>
-            <img class="slot" id="slot3"></div>
-        </div>
-        <br>
-        <button class="button" id="generate-button">Generate</button>
-        <p id="result"></p>
-    <script src="scripts/script.js"></script> 
+         <div id="app">
+           <div id="card">
+             <p id="word">Word</p>
+             <input type="text" id="translation" placeholder="Enter translation" />
+             <button id="check">Перевірити</button>
+           </div>
+           <p id="progress">Крок: 0/10</p>
+           <p id="stats">Правильно: 0, Помилок: 0</p>
+           <div id="modal" style="display:none;">
+             <p id="result">Ваш рівень: Початківець</p>
+             <button id="restart">Перезавантажити</button>
+           </div>
+        </div> 
+        <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="scripts/script.js"></script>
 </body>
 </html>
