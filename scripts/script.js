@@ -7,6 +7,10 @@ const result = document.getElementById('result');
 
 const Slots = ['pear', 'strawberry', 'lime', 'cherry', 'grape'];
 
+slot1.src = "Resources/bg.png";
+slot2.src = "Resources/bg.png";  
+slot3.src = "Resources/bg.png";
+
 let attempts = 0;
 let maxAttempts = 3;
 
