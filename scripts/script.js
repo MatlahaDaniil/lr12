@@ -62,6 +62,9 @@ $(document).ready(function () {
     ];
       shuffledWords = shuffle([...words]);
     }
+    
+    $('#difficulty-form :input').prop('disabled', true); // Всі поля у формі стають неактивними
+  
 
     let currentIndex = 0;
     let correctCount = 0;
