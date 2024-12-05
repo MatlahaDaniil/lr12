@@ -46,11 +46,11 @@ function spinSlots() {
 
     if (randomSymbols[0] === randomSymbols[1] && randomSymbols[1] === randomSymbols[2]) {    
         generateButton.disabled = true;
-        result.textContent = "Перемогає " + userName + "!";
+        result.textContent = "Перемагає " + userName + "!";
         setTimeout(restartGame, 2000);
     } else if (attempts >= maxAttempts) {
         generateButton.disabled = true;
-        result.textContent = "Перемогає комп'ютер!";
+        result.textContent = "Перемагає комп'ютер!";
         setTimeout(restartGame, 2000);
     } else {
         result.textContent = "Спроба " + attempts + " з " + maxAttempts;
