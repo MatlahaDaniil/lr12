@@ -7,14 +7,18 @@ const result = document.getElementById('result');
 
 const Slots = ['pear', 'strawberry', 'lime', 'cherry', 'grape'];
 
+setTimeout(beginGame, 1000);
+
 let attempts = 0;
 let maxAttempts = 3;
 
-let userName = prompt("Введіть своє ім\'я:");
-slot1.src = "Resources/bg.png";
-slot2.src = "Resources/bg.png";  
-slot3.src = "Resources/bg.png";
-userInfo.textContent = "Гравець: " + userName;
+function beginGame(){
+    let userName = prompt("Введіть своє ім\'я:");
+    slot1.src = "Resources/bg.png";
+    slot2.src = "Resources/bg.png";  
+    slot3.src = "Resources/bg.png";
+    userInfo.textContent = "Гравець: " + userName;
+}
 
 function getRandomSymbol() {
     return Slots[Math.floor(Math.random() * Slots.length)];
@@ -24,6 +28,9 @@ function restartGame(){
     attempts = 0;
     result.textContent = "";
     generateButton.disabled = false;
+    slot1.src = "Resources/bg.png";
+    slot2.src = "Resources/bg.png";  
+    slot3.src = "Resources/bg.png";
 }
 
 function spinSlots() {
