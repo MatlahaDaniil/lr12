@@ -6,8 +6,9 @@ const generateButton = document.getElementById('generate-button');
 const result = document.getElementById('result');
 
 const Slots = ['pear', 'strawberry', 'lime', 'cherry', 'grape'];
+setTimeout(beginGame, 300);
+generateButton.disabled = true;
 
-setTimeout(beginGame, 1000);
 
 let attempts = 0;
 let maxAttempts = 3;
@@ -18,6 +19,7 @@ function beginGame(){
     slot2.src = "Resources/bg.png";  
     slot3.src = "Resources/bg.png";
     userInfo.textContent = "Гравець: " + userName;
+    generateButton.disabled = false;
 }
 
 function getRandomSymbol() {
