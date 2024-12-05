@@ -1,0 +1,30 @@
+body{ 
+    margin-top: 10%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.slots {
+    display: inline;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+.slot {
+    width: 150px;
+    height: 150px;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
